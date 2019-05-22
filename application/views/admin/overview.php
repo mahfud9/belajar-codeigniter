@@ -1,122 +1,56 @@
+<!--
+*
+*  INSPINIA - Responsive Admin Theme
+*  version 2.8
+*
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+
   <?php $this->load->view("admin/_partials/head.php") ?>
+
 </head>
-<body id="page-top">
 
-<?php $this->load->view("admin/_partials/navbar.php") ?>
+<body>
+  <div id="wrapper">
+   <?php $this->load->view("admin/_partials/sidebar.php") ?>
 
-<div id="wrapper">
 
-  <?php $this->load->view("admin/_partials/sidebar.php") ?>
+   <div id="page-wrapper" class="gray-bg dashbard-1">
+    <div class="row border-bottom">
+     <?php $this->load->view("admin/_partials/navbar.php") ?>
+   </div>
+   <div class="row  border-bottom white-bg dashboard-header">
 
-  <div id="content-wrapper">
-
-    <div class="container-fluid">
-
-        <!-- 
-        karena ini halaman overview (home), kita matikan partial breadcrumb.
-        Jika anda ingin mengampilkan breadcrumb di halaman overview,
-        silahkan hilangkan komentar (//) di tag PHP di bawah.
-        -->
-    <?php //$this->load->view("admin/_partials/breadcrumb.php") ?>
-
-    <!-- Icon Cards-->
-    <div class="row">
-      <div class="col-xl-3 col-sm-6 mb-3">
-      <div class="card text-white bg-primary o-hidden h-100">
-        <div class="card-body">
-        <div class="card-body-icon">
-          <i class="fas fa-fw fa-comments"></i>
-        </div>
-        <div class="mr-5">26 New Messages!</div>
-        </div>
-        <a class="card-footer text-white clearfix small z-1" href="#">
-        <span class="float-left">View Details</span>
-        <span class="float-right">
-          <i class="fas fa-angle-right"></i>
-        </span>
-        </a>
-      </div>
-      </div>
-      <div class="col-xl-3 col-sm-6 mb-3">
-      <div class="card text-white bg-warning o-hidden h-100">
-        <div class="card-body">
-        <div class="card-body-icon">
-          <i class="fas fa-fw fa-list"></i>
-        </div>
-        <div class="mr-5">11 New Tasks!</div>
-        </div>
-        <a class="card-footer text-white clearfix small z-1" href="#">
-        <span class="float-left">View Details</span>
-        <span class="float-right">
-          <i class="fas fa-angle-right"></i>
-        </span>
-        </a>
-      </div>
-      </div>
-      <div class="col-xl-3 col-sm-6 mb-3">
-      <div class="card text-white bg-success o-hidden h-100">
-        <div class="card-body">
-        <div class="card-body-icon">
-          <i class="fas fa-fw fa-shopping-cart"></i>
-        </div>
-        <div class="mr-5">123 New Orders!</div>
-        </div>
-        <a class="card-footer text-white clearfix small z-1" href="#">
-        <span class="float-left">View Details</span>
-        <span class="float-right">
-          <i class="fas fa-angle-right"></i>
-        </span>
-        </a>
-      </div>
-      </div>
-      <div class="col-xl-3 col-sm-6 mb-3">
-      <div class="card text-white bg-danger o-hidden h-100">
-        <div class="card-body">
-        <div class="card-body-icon">
-          <i class="fas fa-fw fa-life-ring"></i>
-        </div>
-        <div class="mr-5">13 New Tickets!</div>
-        </div>
-        <a class="card-footer text-white clearfix small z-1" href="#">
-        <span class="float-left">View Details</span>
-        <span class="float-right">
-          <i class="fas fa-angle-right"></i>
-        </span>
-        </a>
-      </div>
-      </div>
-    </div>
-
-    <!-- Area Chart Example-->
-    <div class="card mb-3">
-      <div class="card-header">
-      <i class="fas fa-chart-area"></i>
-      Visitor Stats</div>
-      <div class="card-body">
-      <canvas id="myAreaChart" width="100%" height="30"></canvas>
-      </div>
-      <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-    </div>
-
-    </div>
-    <!-- /.container-fluid -->
-
-    <!-- Sticky Footer -->
-    <?php $this->load->view("admin/_partials/footer.php") ?>
+    <?php $this->load->view("admin/_partials/header.php") ?>
 
   </div>
-  <!-- /.content-wrapper -->
+  <div class="row">
+    <?php $this->load->view("admin/_partials/modal.php") ?>
+  </div>
+  <?php $this->load->view("admin/_partials/footer.php") ?>
+</div>
+<div class="small-chat-box fadeInRight animated">
+  <?php $this->load->view("admin/_partials/small-chat.php") ?>
+  
 
 </div>
-<!-- /#wrapper -->
+<div id="small-chat">
 
+  <span class="badge badge-warning float-right">5</span>
+  <a class="open-small-chat" href="">
+    <i class="fa fa-comments"></i>
 
-<?php $this->load->view("admin/_partials/scrolltop.php") ?>
-<?php $this->load->view("admin/_partials/modal.php") ?>
-<?php $this->load->view("admin/_partials/js.php") ?>
-    
+  </a>
+</div>
+<div id="right-sidebar" class="animated">
+  <?php $this->load->view("admin/_partials/navbar-notes-right.php") ?> 
+</div>
+</div>
+
+<?php $this->load->view("admin/_partials/js.php") ?> 
 </body>
 </html>

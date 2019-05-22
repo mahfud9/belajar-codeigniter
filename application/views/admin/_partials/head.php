@@ -1,17 +1,17 @@
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-<title><?php echo SITE_NAME .": ". ucfirst($this->uri->segment(1)) ." - ". ucfirst($this->uri->segment(2)) ?></title>
+<title>INSPINIA | Dashboard</title>
 
-<!-- Bootstrap core CSS-->
-<link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
+<link href="<?php echo base_url('assets/css/bootstrap.min.css" rel="stylesheet')?>">
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
 
-<!-- Custom fonts for this template-->
-<link href="<?php echo base_url('assets/fontawesome-free/css/all.min.css') ?>" rel="stylesheet" type="text/css">
+<!-- Toastr style -->
+<link href="<?php echo base_url('assets/css/plugins/toastr/toastr.min.css" rel="stylesheet')?>">
 
-<!-- Page level plugin CSS-->
-<link href="<?php echo base_url('assets/datatables/dataTables.bootstrap4.css') ?>" rel="stylesheet">
+<!-- Gritter -->
+<link href="<?php echo base_url('js/plugins/gritter/jquery.gritter.css" rel="stylesheet')?>">
 
-<!-- Custom styles for this template-->
-<link href="<?php echo base_url('css/sb-admin.css') ?>" rel="stylesheet">
+<link href="<?php echo base_url('assets/css/animate.css" rel="stylesheet')?>">
+<link href="<?php echo base_url('assets/css/style.css" rel="stylesheet')?>">
